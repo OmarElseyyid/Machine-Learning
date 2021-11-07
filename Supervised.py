@@ -22,8 +22,8 @@ ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [ the column n
 x = np.array(ct.fit_transform(x))
 
 #encode the y categorical values with LableEncoder
-from sklearn.preprocessing import LableEncoder
-le = LableEncoder()
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
 y = le.fit_transform(y)
 
 #split dataset to x_train, x_test, y_train, y_test
